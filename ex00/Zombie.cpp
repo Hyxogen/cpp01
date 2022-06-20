@@ -16,6 +16,14 @@ void Zombie::announce() const {
     std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
+Zombie &Zombie::operator=(const Zombie &other) {
+    if (this == &other) {
+        return *this;
+    }
+    _name = other._name;
+    return *this;
+}
+
 Zombie *Zombie::newZombie(const std::string &name) {
     return new Zombie(name);
 }
