@@ -22,4 +22,7 @@ public:
     static void    randomChump(const std::string &name);
 };
 
+/* The only reason also have these functions in the global scope is because the subject wanted it */
+Zombie *newZombie(const std::string &name);
+void    randomChump(const std::string &name);
 #endif
