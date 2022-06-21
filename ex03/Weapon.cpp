@@ -2,19 +2,19 @@
 
 Weapon::Weapon(const std::string &type) : _type(type) { }
 
-Weapon(const Weapon &other) : _type(other._type) { } 
+Weapon::Weapon(const Weapon &other) : _type(other._type) { } 
 
-~Weapon() { }
+Weapon::~Weapon() { }
 
-const std::string &getType() const {
+const std::string &Weapon::getType() const {
 	return _type;
 }
 
-void setType(const std::string &type) {
+void Weapon::setType(const std::string &type) {
 	_type = type;
 }
 
-Weapon &operator=(const Weapon &other) {
+Weapon &Weapon::operator=(const Weapon &other) {
 	if (this == &other) {
 		return *this;
 	}
