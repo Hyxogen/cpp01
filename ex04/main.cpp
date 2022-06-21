@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 	std::ifstream infile(argv[1]);
-	std::ofstream outfile(std::string(argv[1]) + ".replace"); 
+	std::ofstream outfile(std::string(argv[1]).append(".replace").c_str()); 
 	if (!infile || !outfile) {
 		std::cerr << "failed to open files" << std::endl;
 		return 1;
