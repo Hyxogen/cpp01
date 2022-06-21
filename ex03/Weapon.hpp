@@ -13,7 +13,7 @@ public:
 	~Weapon();
 
 	const std::string &getType() const;
-	void setType(const std::string _type);
+	void setType(const std::string &_type);
 
 	Weapon &operator=(const Weapon &other);
 };
