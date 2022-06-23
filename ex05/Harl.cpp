@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-info_proc Harl::procs[8] = { &Harl::unknown, &Harl::unknown, &Harl::error,
+const Harl::info_proc Harl::procs[8] = { &Harl::unknown, &Harl::unknown, &Harl::error,
                              &Harl::unknown, &Harl::info,    &Harl::unknown,
                              &Harl::warning, &Harl::debug };
 
