@@ -39,15 +39,15 @@ void Harl::unknown() const {
 }
 
 void Harl::complain(const std::string &level) const {
-	info_proc proc = procs[hash(level) % 8];
-	this->*proc();
+    info_proc proc = procs[hash(level) % 8];
+    this->*proc();
 }
 
 std::size_t hash(const std::string &str) {
-	std::size_t result = 0;
+    std::size_t result = 0;
 
-	for (std::string::const_iterator it = str.begin(); it != str.end(); ++it) {
-		result += static_cast<int>(*it);
-	}
-	return result;
+    for (std::string::const_iterator it = str.begin(); it != str.end(); ++it) {
+        result += static_cast<int>(*it);
+    }
+    return result;
 }
