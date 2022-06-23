@@ -40,7 +40,7 @@ void Harl::unknown() const {
 
 void Harl::complain(const std::string &level) const {
     info_proc proc = procs[hash(level) % 8];
-    this->*proc();
+    (this->*(proc))();
 }
 
 std::size_t hash(const std::string &str) {
