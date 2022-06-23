@@ -4,7 +4,7 @@
 #include <string>
 
 class Harl {
-    typedef Harl::*info_proc;
+    typedef void (Harl::*info_proc)();
 
     static const info_proc procs[8];
 
