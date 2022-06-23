@@ -15,6 +15,7 @@ public:
 	void info() const;
 	void warning() const;
 	void error() const;
+	void unknown() const;
 
 	void complain(const std::string &level) const;
 };
